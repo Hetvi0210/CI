@@ -1,0 +1,7 @@
+Practical 2 - 
+python server_1.py, python client_1.py
+
+
+Practical 3 - 
+python character_count_3.py x.txt
+python word_count_3. py x.txt

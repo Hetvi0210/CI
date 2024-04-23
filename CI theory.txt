@@ -1,0 +1,95 @@
+1ST - RPC
+Remote Procedure Call is a software communication protocol that one program can use to request a service from a program located in another computer on a network without having to understand the network's details.
+Application - Financial Transaction.
+Types - 1. Callback RPC
+This type of RPC enables a P2P paradigm between participating processes. It helps a process to be both client and server services. Callback RPC has the following functions, such as:
+Remotely processed interactive application problems.
+Offers server with clients handle.
+Callback makes the client process wait.
+2. Broadcast RPC -
+Broadcast RPC is a client's request broadcast on the network, processed by all servers with the method for processing that request. Broadcast RPC has the following functions, such as:
+Allows you to specify that the client's request message has to be broadcast.
+You can declare broadcast ports.
+3. Batch-mode RPC -
+Batch-mode RPC helps to queue, separate RPC requests, in a transmission buffer, on the client-side, and then send them on a network in one batch to the server. Batch-mode RPC has the following functions, such as:
+It minimizes the overhead involved in sending a request by sending them over the network in one batch to the server.
+This type of RPC protocol is only efficient for an application that needs lower call rates.
+
+2ND - RMI
+rmi is an api where an object can invoke method of other object which is located on different address space on same system or on different system
+Rmi is purely Java based. Rmi ka application financial transactions hi hai same.
+The RMI provides remote communication between the applications using two objects stub and skeleton.
+stub - The stub is an object, acts as a gateway for the client side. All the outgoing requests are routed through it. It resides at the client side and represents the remote object.
+skeleton - The skeleton is an object, acts as a gateway for the server side object. All the incoming requests are routed through it.
+Application - Financial transaction.
+
+3rd - Hadoop
+Mapreduce framework under Hadoop which is used for processing big data efficiently
+two pahses - map and reduce
+map breaks the data into smaller chunks anf each chunk is processed independently and simultaneously
+each chunk is assigned with a key
+and passed to reduce phase
+reduce phase shuffles all key value pairs and and aggregates based on same key
+the output of reduce pahse is final result of overall computation.
+Types - HDFS, YARN, map reduce.
+Application - Recommendation system and log analysis.
+
+4th - Fuzzy set
+Fuzzy Set is a Set where every key is associated
+with value, which is between 0 to 1 based on the certainty. This value is often called as degree of membership.
+1. Union:
+Definition: The union of two fuzzy sets A and B is another fuzzy set C, where the membership degree of an element in C is the maximum of its membership degrees in 
+A and B.
+Symbol: 
+C=A∪B
+Mathematical Expression: 
+𝜇𝐶(𝑥)=max(𝜇𝐴(𝑥),𝜇𝐵(𝑥))
+2. Intersection:
+Definition: The intersection of two fuzzy sets A and B is another fuzzy set C, where the membership degree of an element in C is the minimum of its membership degrees in A and B.
+Symbol: 𝐶=𝐴∩𝐵
+Mathematical Expression: (x)=min(μA(x),μB(x))
+3. Complement:
+Definition: The complement of a fuzzy set A is another fuzzy set B, where the membership degree of an element in B is 1 minus its membership degree in A.
+Symbol: B=A′or B=¬A
+Mathematical Expression: μB(x)=1−μA(x)
+4. Difference:
+Definition: The difference between two fuzzy sets A and B is another fuzzy set C, where the membership degree of an element in C is the minimum of its membership degree in A and the complement of its membership degree in B.
+Symbol: C=A−B
+Mathematical Expression: (x)=min(μA(x),1−μB(x))
+5. Cartesian Product:
+Definition: The Cartesian product of two fuzzy sets A and B is a fuzzy relation R, where the membership degree of an ordered pair (x,y) in R is the minimum of the membership degrees of 
+x in A and y in B.
+Symbol:R=A×B
+Mathematical Expression:μR((x,y))=min(μA(x),μB(y))
+
+5TH - GENETIC (MIL SPRAY)
+Genetic algorithm is based on process of natural selection and mutation. 
+It considers the individual with best survival of fittest values
+Starts by-
+Initialisation - Gather a subset of individual candidates or individual solution against an optimisation search problem
+Evaluation - each individual is assigned with an fitness score
+Selection - bàsed on the fitness value best surviving candidates are selected
+Crossover - genetic material of parent individual are mixed to produce an off spring
+Mutation - used to introduce diversity in data set for best optimal approach
+Replacement and termination - the new off spring with low fitness value is replaced from more optimisation and past generated off spring dataset
+And is terminated upon reaching the best optimal solution
+Application - Travelling salesman problem and travel routing.
+
+6TH - CLONAL
+The Clonal Selection Algorithm (CSA) is a biologically inspired optimization algorithm based on the principles of the immune system's clonal selection process.
+The CSA mimics the process by which the immune system generates a large number of antibodies to combat pathogens, with stronger antibodies being produced in higher quantities.
+steps:
+1. intialisation:
+initialize the population of antibodies randomly or using heuristic approach
+2. Affinity calculation:
+calculating the affinity score for each antibody
+3. clonal selection:
+the antibodies with higher affinity scores are selected for cloning
+4. cloning:
+multiple copies of antibodies are generated
+5. mutation:
+diversity in the population is generated
+6. selection: based on their affinity antibodies are selected for creating next generation
+7. termination:
+algorithm is terminated when maximum no. of iterations are performed or population reaches towards optimal solution
+Aplication - pattern recognition
